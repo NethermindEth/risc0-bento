@@ -5,7 +5,7 @@ services:
     image: ${REDIS_IMG}
     restart: always
     ports:
-      - 6379:6379
+      - 6380:6379
     volumes:
       - redis-data:/data
 
@@ -48,7 +48,7 @@ services:
     image: ${GRAFANA_IMG}
     restart: unless-stopped
     ports:
-     - '3000:3000'
+      - '2999:3000'
     environment:
       - GF_SECURITY_ADMIN_USER=admin
       - GF_SECURITY_ADMIN_PASSWORD=admin
@@ -93,9 +93,9 @@ services:
       RUST_LOG: ${RUST_LOG}
       RUST_BACKTRACE: 1
       RISC0_KECCAK_PO2: ${RISC0_KECCAK_PO2}
-      # Enable / disable along with gpu_*_agent*
-      # JOIN_STREAM: 1
-      # COPROC_STREAM: 1
+    # Enable / disable along with gpu_*_agent*
+    # JOIN_STREAM: 1
+    # COPROC_STREAM: 1
     entrypoint: /app/agent -t exec --segment-po2 ${SEGMENT_SIZE}
 
   aux_agent:
