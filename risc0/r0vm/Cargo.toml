@@ -32,7 +32,7 @@ risc0-zkvm = { workspace = true, features = ["prove"] }
 serde = { version = "1.0.219", features = ["rc"] }
 tempfile = "3.20.0"
 thiserror = "2.0.12"
-tokio = { version = "1.44.2", features = [
+tokio = { version = "1.47.1", features = [
   "macros",
   "io-util",
   "process",
