@@ -28,7 +28,7 @@ postcard = { version = "1", default-features = false, features = ["alloc"] }
 rand = { version = "0.9", default-features = false, optional = true }
 risc0-zkp = { workspace = true }
 risc0-zkvm-platform = { workspace = true }
-ruint = { version = "1.15.0", default-features = false, features = ["serde", "borsh"] }
+ruint = { version = "1.17.1", default-features = false, features = ["serde", "borsh"] }
 semver = { version = "1", default-features = false, features = ["serde"] }
 serde = { version = "1.0", default-features = false, features = [
   "derive",
