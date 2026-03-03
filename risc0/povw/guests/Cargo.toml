@@ -19,7 +19,7 @@ risc0-binfmt = { workspace = true }
 risc0-povw = { workspace = true, features = ["prover"] }
 risc0-zkvm = { workspace = true, features = ["client", "unstable"] }
 risc0-zkvm-methods = { path = "../../zkvm/methods" }
-ruint = { version = "1.15" }
+ruint = { version = "1.17" }
 
 [build-dependencies]
 risc0-build = { workspace = true }
